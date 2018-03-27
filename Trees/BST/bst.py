@@ -1,6 +1,7 @@
 class Node:
     def __init__(self, data):
         self.data = data
+        # left and right child-pointers
         self.links = [None, None]
 
 
@@ -49,7 +50,8 @@ class Bst:
             self._inorder(nod.links[1])
 
     def inorder(self):  
-        self._inorder(self.root)    
+        self._inorder(self.root)
+        print('\n', '-'*10)     
     
     def _search(self, data, start):
         current = start
@@ -143,13 +145,105 @@ class Bst:
                 self.root = substitute
 
 
+    @staticmethod
+    def find_extreme(current, dir):
+        largest = None
+        while current:
+            largest = current.data
+            current = current.links[dir]
+
+        return largest
+
+    def second_element(self, largest = True):
+        s_largest = None
+
+        if self.root is None:
+            return
+
+        current = self.root
+
+        while current:
+            if current.links[largest]:
+                s_largest = current.data
+                current = current.links[largest]
+            else:
+                if current.links[not largest]:
+                    return self.find_extreme(current.links[not largest], largest)
+                else:
+                    break
+        return s_largest
+
+    '''
+    @staticmethod
+    def _nth_element(current):
+        if not current:
+            return None
+        Bst._nth_element(current.links[0])
+        Bst._nth_element.count -= 1
+        if Bst._nth_element.count == 0:
+            Bst._nth_element.ret_val = current.data
+            return
+        Bst._nth_element(current.links[1])
+
+
+
+    def nth_element(self, n):
+       self._nth_element.count = n
+       self._nth_element(self.root)
+       print(Bst._nth_element.ret_val)
+
+       # Not- re-entrant
+    '''
+
+    def nth_element(self, n):
+        from queue import LifoQueue
+        stk = LifoQueue()
+
+        if self.root is None:
+            return
+
+        stk.put((self.root, False))
+
+        while not stk.empty():
+            current, visited = stk.get()
+
+            if visited:
+                n -= 1
+                if n == 0:
+                    return current.data
+            else:
+                if current.links[1]:
+                    stk.put((current.links[1], False))
+    
+                stk.put((current, True))
+                
+                if current.links[0]:
+                    stk.put((current.links[0], False))
+
     def delete(self, data):
         self._delete(data, self.root, None, None)
+
+    def lvl_order(self):
+        from queue import Queue
+        q = Queue()
+
+        if self.root:
+            q.put(self.root)
+
+        while not q.empty():
+            current = q.get()
+            print(current.data, end = ' ')
+            if current.links[0]:
+                q.put(current.links[0])
+            if (current.links[1]):
+                q.put(current.links[1])
+
+        print('\n', '-'*10)        
 
 
 if __name__ == '__main__':
     bstree = Bst()
-    l = [50, 20, 80, 34, 2, 98, 56]
+    l = [52, 50, 20, 80, 34, 2, 16, 98, 56, 46, 56, 98]
 
     for i in l:
         bstree.insert(i)
@@ -159,6 +253,9 @@ if __name__ == '__main__':
     print('count of 20: ', bstree.count(20))
     print('count of 80: ', bstree.count(56))
 
-    bstree.delete(98)
-
     bstree.inorder()
+    bstree.lvl_order()
+
+    print(bstree.second_element(largest = False))
+    print('------------')
+    print(bstree.nth_element(5))
