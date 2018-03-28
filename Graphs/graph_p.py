@@ -30,3 +30,8 @@ class Graph:
     def __iter__(self):
         # return iter of list (ver_list.values), which already have __next__
         return iter(self.vert_list.values())
+
+    def __str__(self):
+        for i in sorted(self.vert_list.keys()):
+            print(self.vert_list[i])
+        return '' # __str__ must return a string

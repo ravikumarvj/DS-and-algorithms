@@ -17,5 +17,5 @@ class Vertex:
             return self.neighs[neigh_key]
 
     def __str__(self):
-        return str(self.key) + 'is connected to:' + \
-               ','.join((str(i) for i in self.neighs))
+        return str(self.key) + ' is connected to: ' + \
+               ', '.join((str(i) + '[' + str(j) + ']' for i, j in self.neighs.items()))
