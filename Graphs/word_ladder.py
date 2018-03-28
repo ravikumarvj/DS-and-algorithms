@@ -56,4 +56,4 @@ def find_path(graph, from_word, to_word):
 if __name__ == '__main__':
     graph = make_graph('four_word_list.txt')
 
-    find_path(graph, "sage", "fool")
+    find_path(graph, "film", "fool")
