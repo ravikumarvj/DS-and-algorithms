@@ -1,3 +1,7 @@
+from queue import Queue
+from queue import LifoQueue
+
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -6,7 +10,7 @@ class Node:
 
 
 # Bst is a binary search tree class, which allows duplicates
-class Bst:
+class BSTree:
     def __init__(self):
         self.root = None
 
@@ -98,17 +102,17 @@ class Bst:
             if start.links[1] is None:
                 return start.links[0]
 
-            replace = Bst.find_smallest(start.links[1])
+            replace = BSTree.find_smallest(start.links[1])
             start.data = replace.data
-            start.links[1] = Bst._delete_recur(replace.data, start.links[1])
+            start.links[1] = BSTree._delete_recur(replace.data, start.links[1])
             return start
 
         side = data > start.data
-        start.links[side] = Bst._delete_recur(data, start.links[side])
+        start.links[side] = BSTree._delete_recur(data, start.links[side])
         return start
 
     def delete_recur (self, data):
-        self.root = Bst._delete_recur(data, self.root)
+        self.root = BSTree._delete_recur(data, self.root)
 
     @staticmethod
     def _delete(data, start, ancestor, direction):
@@ -135,9 +139,9 @@ class Bst:
             substitute = current.links[1]
 
         if current.links[0] and current.links[1]:
-            replace = Bst.find_smallest(current.links[1])
+            replace = BSTree.find_smallest(current.links[1])
             current.data = replace.data
-            Bst._delete(replace.data, current.links[1], current, 1)
+            BStree._delete(replace.data, current.links[1], current, 1)
         else:
             if parent:
                 parent.links[side] = substitute
@@ -196,7 +200,6 @@ class Bst:
     '''
 
     def nth_element(self, n):
-        from queue import LifoQueue
         stk = LifoQueue()
 
         if self.root is None:
@@ -224,7 +227,6 @@ class Bst:
         self._delete(data, self.root, None, None)
 
     def lvl_order(self):
-        from queue import Queue
         q = Queue()
 
         if self.root:
@@ -240,9 +242,73 @@ class Bst:
 
         print('\n', '-'*10)        
 
+    def __iter__(self):
+        self.stk = LifoQueue()
+        if self.root:
+            self.stk.put((self.root, False))
+        return self
+
+    def __next__(self):
+        while not self.stk.empty():
+            node, visited = self.stk.get()
+            if visited:
+                return node.data
+            else:
+                if node.links[1]:
+                    self.stk.put((node.links[1], False))
+                self.stk.put((node, True))
+                if node.links[0]:
+                    self.stk.put((node.links[0], False))
+        raise StopIteration  # Don't Forget this.
+
+
+class BinaryTree(BSTree):
+    def replace(self, frm, to):
+        q = Queue()
+        if self.root is None:
+            return
+
+        q.put(self.root)
+
+        while not q.empty():
+            node = q.get()
+            if node.data == frm:
+                node.data = to
+                return
+
+            if node.links[0]:
+                q.put(node.links[1])
+            if node.links[1]:
+                q.put(node.links[1])
+
+    def is_bst(self):
+        stk = LifoQueue()
+
+        if not self.root:
+            return True
+
+        stk.put((self.root, False))
+        last = (self.find_smallest(self.root)).data
+
+        while not stk.empty():
+            node, visited = stk.get()
+
+            if visited:
+                if last > node.data:
+                    return False
+                last = node.data
+            else:
+                if node.links[1]:
+                    stk.put((node.links[1], False))
+                stk.put((node, True))
+                if node.links[0]:
+                    stk.put((node.links[0], False))
+
+        return True
+
 
 if __name__ == '__main__':
-    bstree = Bst()
+    bstree = BinaryTree()
     l = [52, 50, 20, 80, 34, 2, 16, 98, 56, 46, 56, 98]
 
     for i in l:
@@ -256,6 +322,13 @@ if __name__ == '__main__':
     bstree.inorder()
     bstree.lvl_order()
 
-    print(bstree.second_element(largest = False))
-    print('------------')
-    print(bstree.nth_element(5))
+    #print(bstree.second_element(largest = False))
+    #print('------------')
+    #print(bstree.nth_element(5))
+    #bstree.replace(52, 49)
+    #bstree.inorder()
+    #print(bstree.is_bst())
+
+    for i in bstree:
+        print(i, end = ' ')
+    print('')
