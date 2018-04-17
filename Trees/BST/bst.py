@@ -8,6 +8,9 @@ class Node:
         # left and right child-pointers
         self.links = [None, None]
 
+    def __str__(self):
+        return self.data
+
 
 # Bst is a binary search tree class, which allows duplicates
 class BSTree:
@@ -79,33 +82,50 @@ class BSTree:
         self._postorder(self.root)
         print('\n', '-'*10)
 
-    @staticmethod # Given root and key, find the key.
-    def _search(data, start):  # Copied
-        current = start
-
-        while current:
-            if current.data == data:
-                return current
-            side = data > current.data
-
-            current = current.links[side]
-
-        return None
-
-    def count(self, data): # copied
+    def count(self, data):  # Copied
         ret = 0
         start = self.root
 
-        while True:
-            # find the occurrence of data, in a tree rooted at 'start'
-            start = self._search(data, start)
-            if start:
+        while start:
+            if data == start.data:
                 ret += 1
+                side = 0  # Check further for 'data' on left side
             else:
-                return ret
-            # if data exists again, it will be on left subtree of start
-            start = start.links[0]
+                side = data > start.data
+            start = start.links[side]
+
         return ret
+
+    # Given an existing data, find the previous and next values
+    def find_prev_next(self, data):  # Copied
+        if self.root is None:
+            return
+
+        current = self.root
+        while current:
+            if current.data == data:
+                break
+            side = data > current.data
+            current = current.links[side]
+
+        if not current:
+            return  # data is not in tree
+
+        if current.links[0]:
+            # previous is the biggest node on left side
+            start = current.links[0]
+            while start.links[1]:
+                start = start.links[1]
+            print('Previous of ', data, 'is ', start.data)
+
+        if current.links[1]:
+            # Next is the smallest node on right side
+            start = current.links[1]
+            while start.links[0]:
+                start= start.links[0]
+            print ('Next of ', data, 'is ', start.data)
+
+        return
 
     @staticmethod
     def find_smallest(start):  # Copied
@@ -161,20 +181,20 @@ class BSTree:
         if current.links[0] and current.links[1]:
             # Middle node deletion; Find replacement node
             rep = current.links[1]
-            parent_rep = current
+            parent_rep = None
 
-            if rep.links[0] is None:
-                # current.links[1] is the replacement node
-                current.data = rep.data
-                current.links[1] = rep.links[1]
-            else:
-                # Loop through to find the rep
-                while rep.links[0]:
-                    parent_rep = rep
-                    rep = rep.links[0]
-                # copy data
-                current.data = rep.data
+            while rep.links[0]:
+                parent_rep = rep
+                rep = rep.links[0]
+
+            # rep is the node to replace
+            current.data = rep.data
+            if parent_rep:
+                # rep will be on '0' side. Also, rep will not have any '0' link.
                 parent_rep.links[0] = rep.links[1]
+            else:
+                # No parent_rep. That means, rep is on '1' side of current.
+                current.links[1] = rep.links[1]
         else:
             if current.links[0] is None:
                 substitute = current.links[1]
@@ -219,11 +239,22 @@ class BSTree:
                 print(node.data, end = ' ')
                 continue  # Continue here, as a visited node's links are already taken care
 
+            # put node first, then right and left, so that it is read in reverse order
             stk.put((node, True))
             if node.links[1]:
                 stk.put((node.links[1], False))
             if node.links[0]:
                 stk.put((node.links[0], False))
+
+    def _inorder(self, nod):  # Copied
+        if nod:
+            self._inorder(nod.links[0])
+            print(nod.data, end=' ')
+            self._inorder(nod.links[1])
+
+    def inorder_r(self):  # Copied
+        self._inorder(self.root)
+        print('\n', '-' * 10)
 
     def in_order(self):  # Copied
         if self.root is None:
@@ -246,6 +277,7 @@ class BSTree:
 
             if node.links[0]:
                 stk.put((node.links[0], False))
+        print('')
 
     def lvl_order(self):  # Copied
         q = Queue()
@@ -258,16 +290,16 @@ class BSTree:
             print(current.data, end = ' ')
             if current.links[0]:
                 q.put(current.links[0])
-            if (current.links[1]):
+            if current.links[1]:
                 q.put(current.links[1])
 
         print('\n', '-'*10)
 
     def __iter__(self):  # Copied
-        self.stk = LifoQueue()
+        self.stk = LifoQueue()  # stack should be available to __next__
         if self.root:
             self.stk.put((self.root, False))
-        return self
+        return self  # return object that implements __next__
 
     def __next__(self):  # Copied
         while not self.stk.empty():
@@ -316,6 +348,8 @@ class BSTree:
     def second_element(self, largest=True):  # Copied
         if self.root is None:
             return
+
+        # Only one data in the root. So return
         if self.root.links[0] is None and self.root.links[1] is None:
             return
 
@@ -330,7 +364,6 @@ class BSTree:
         # See if largest have a left sub-tree (right in case of smallest)
         # If there, is, find the largest (smallest) element there.
         # If there is no sub-tree, the parent is the second largest(smallest)
-
         if current.links[not largest]:
             current = current.links[not largest]
             while current.links[largest]:
@@ -363,7 +396,7 @@ class BSTree:
     '''
 
     def nth_largest_element(self, n):  # Copied
-        if self.root is None:
+        if self.root is None or n < 1:
             return
 
         stk = LifoQueue()
@@ -377,7 +410,7 @@ class BSTree:
                 if n == 0:
                     return current.data
             else:
-                # Travel in reverse of inorder (right, visit, left)
+                # Travel in reverse of in-order (right, visit, left)
                 if current.links[0]:  # Put left-subtree first to stack
                     stk.put((current.links[0], False))
     
@@ -385,6 +418,8 @@ class BSTree:
                 
                 if current.links[1]:  # put right subtree in top of stack
                     stk.put((current.links[1], False))
+
+        return None  # stack is empty and n is not 0
 
     @staticmethod
     def _height_r(start):  # Copied
@@ -397,7 +432,7 @@ class BSTree:
         return (self._height_r(self.root))
 
     def height(self):  # Copied
-        q = LifoQueue()
+        q = Queue()
         if not self.root:
             return 0
 
@@ -410,6 +445,43 @@ class BSTree:
                     q.put((node.links[i], h + 1))
 
         return h
+
+    def __del__(self):  # Copied
+        if self.root is None:
+            return
+
+        q = Queue()
+        q.put(self.root)
+
+        while not q.empty():
+            node = q.get()
+            for i in (0, 1):
+                if node.links[i]:
+                    q.put(node.links[i])
+            del node
+        return
+
+    @staticmethod
+    def padding(ch, n):
+        for _ in range(n):
+            print(ch, end='')
+
+    @staticmethod
+    def structure(node, level):
+        if not node:
+            # BSTree.padding('    ', level)
+            # print("~")
+            pass
+        else:
+            BSTree.structure(node.links[1], level+1)
+            BSTree.padding('    ', level)
+            print(node.data)
+            BSTree.structure(node.links[0], level + 1)
+
+    def print_tree(self):
+        print('-' * 20)
+        BSTree.structure(self.root, 0)
+        print('-' * 20)
 
 
 class BinaryTree(BSTree):
@@ -431,10 +503,34 @@ class BinaryTree(BSTree):
             if node.links[1]:
                 q.put(node.links[1])
 
-    def is_bst(self):
-        # will not work for tree with duplicates because if 46 is right sub child of 46,
-        # it still will be in sorted order. But my rules says 46 should be left sub child.
-        # For this, I will need to loop one extra time for checking immediate children.
+    def _is_bst_rec(self, node):  # Copied
+        l_val, r_val = True, True
+
+        if node.links[0]:
+            l_min, l_max, l_val = self._is_bst_rec(node.links[0])
+            if not l_max <= node.data:
+                return 0, 0, False
+        else:
+            l_max = node.data
+
+        if node.links[1]:
+            r_min, r_max, r_val = self._is_bst_rec(node.links[1])
+            if not node.data < r_min:
+                return 0, 0, False
+        else:
+            r_min = node.data
+
+        if (l_val and r_val) is False:
+            return 0, 0, False
+
+        return l_max, r_min, True
+
+    def is_bst_rec(self):  # Copied
+        return self._is_bst_rec(self.root)[2]
+
+    def is_bst(self):  # Copied
+        # won't work for tree with duplicates because if 46 is right sub child of 46,
+        # it still will be in sorted order. But rules says 46 must be left sub child.
         if not self.root:
             return True
 
@@ -446,7 +542,8 @@ class BinaryTree(BSTree):
             node, visited = stk.get()
 
             if visited:
-                if last and last > node.data:  # Violates binary search tree property
+                print(last, node.data)
+                if last is not None and last > node.data:  # Violates binary search tree property
                     return False
                 last = node.data  # Save last visited node's data
             else:
@@ -458,10 +555,164 @@ class BinaryTree(BSTree):
 
         return True  # It is BST, if it dint fail before
 
+    @staticmethod
+    def _print_all_paths(node, l):  # Copied
+        if node is None:
+            return
+
+        l.append(node.data)  # Add node to list
+        if not any(node.links):  # Found a leaf
+            print(l)
+        else: # internal node
+            # print all paths through left node
+            BinaryTree._print_all_paths(node.links[0], l)
+            # print all paths through right node
+            BinaryTree._print_all_paths(node.links[1], l)
+
+        # Done with the node. remove it
+        l.pop()
+
+    def print_all_paths(self):  # Copied
+        self._print_all_paths(self.root, [])
+
+    def print_all_paths_non_rec(self):  # Copied
+        if self.root is None:
+            return
+
+        stk = LifoQueue()
+        path = []
+        stk.put((self.root, False))
+
+        while not stk.empty():
+            node, visited = stk.get()
+
+            if visited:
+                if not any(node.links):  # leaf
+                    print(path)
+                path.pop()
+            else:
+                stk.put((node, True))
+                path.append(node.data)
+                for i in (1, 0):
+                    if node.links[i]:
+                        stk.put((node.links[i], False))
+
+    '''
+    @staticmethod
+    def _is_avl(node):
+        if not node:
+            return True
+
+        if abs(BinaryTree.height(node.links[0]) - BinaryTree.height(node.links[1])) >= 2:
+            return False
+
+        return BinaryTree._is_avl(node.links[0]) and BinaryTree._is_avl(node.links[1])
+    '''
+
+    @staticmethod
+    def _is_avl(node):  # copied
+        if not node:
+            return True, 0
+
+        # using single recursion, calculate if node is balanced, as well as its height
+        left, hl = BinaryTree._is_avl(node.links[0])
+        right, hr = BinaryTree._is_avl(node.links[1])
+
+        height = 1 + max(hl, hr)
+        if abs(hl - hr) >= 2:
+            return False, height
+
+        return (left and right), height
+
+    def is_avl(self):  # Copied
+        if not self.is_bst():  # Don't forget BST check
+            return False
+        return BinaryTree._is_avl(self.root)[0]
+
+    def minimum_depth(self):  # Copied
+        if self.root is None:
+            return -1
+        q = Queue()
+        q.put((self.root, 0))
+
+        while not q.empty():
+            node, lvl = q.get()
+
+            if not any(node.links):  # Found a leaf
+                return lvl
+            if node.links[0]:
+                q.put((node.links[0], lvl + 1))
+            if node.links[1]:
+                q.put((node.links[1], lvl + 1))
+
+    # In a complete binary tree every level, except possibly the last, is completely filled,
+    # and all nodes in the last level are as far left as possible.
+    # It can have between 1 and 2h nodes at the last level h
+    def is_complete_binary_tree(self):  # Copied
+        if self.root is None:
+            return True
+
+        q = Queue()
+        q.put(self.root)
+
+        while not q.empty():
+            node = q.get()
+            if not all(node.links): # Leaves started
+                if node.links[1] is not None:
+                    # If only right node exists, it is not complete
+                    return False
+                if node.links[0] is not None: # Only left node is OK.
+                    q.put(node.links[0])
+                break  # break out
+            q.put(node.links[0])
+            q.put(node.links[1])
+
+        # From now on, all the nodes should be leaves
+        while not q.empty():
+            node = q.get()
+            if any(node.links):
+                return False
+
+        return True
+
+    def is_perfect_binary_tree(self):  # Copied
+        if self.root is None:
+            return True
+
+        q = Queue()
+        q.put((self.root, 1))  # Root is at level 1
+        prev_lvl = 0
+
+        while not q.empty():
+            node, lvl = q.get()
+
+            if not any(node.links):  # leaves started
+                if not lvl == prev_lvl + 1:  # should be a new level
+                    return False
+                prev_lvl = lvl
+                break  # leaves started
+            elif all(node.links): # internal node
+                q.put((node.links[0], lvl + 1))
+                q.put((node.links[1], lvl + 1))
+                prev_lvl = lvl # update lvl
+            else: # Node with one child
+                return False
+
+        while not q.empty():
+            node, lvl = q.get()
+            if any(node.links):  # Non-leaf?
+                return False
+            if lvl != prev_lvl:  # all leaves should be at same level
+                return False
+
+        return True
+
+    # Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
+
 
 if __name__ == '__main__':
     bstree = BSTree()
-    l = [52, 50, 20, 80, 34, 2, 16, 98, 56, 46, 56, 98]
+    l = [52, 50, 98, 20, 0, 80, 34, 2, 16, 98, 56, 46, 56, 98]
 
     for i in l:
         bstree.insert(i)
@@ -469,7 +720,11 @@ if __name__ == '__main__':
     # bstree.inorder()
     # print()
     # print('count of 20: ', bstree.count(20))
-    # print('count of 80: ', bstree.count(56))
+    # print('count of 56: ', bstree.count(56))
+    # print('count of 98: ', bstree.count(98))
+    # print('count of 0 : ', bstree.count(0))
+
+
 
     # bstree.lvl_order()
 
@@ -489,32 +744,67 @@ if __name__ == '__main__':
     bstree.insert(18)
     #    print(bstree.height())
 
+    # bstree.find_prev_next(0)
+    # bstree.find_prev_next(98)
+    # bstree.find_prev_next(20)
+
+    # bstree.in_order()
+
+    # for i in bstree:
+    #     print(i, end = '*')
+
+    '''
+    a = bstree.get_first()
+    print(a, end = ' ')
+
+    while 1:
+        a = bstree.get_next(a)
+        if a is not None:
+            print(a, end = ' ')
+        else:
+            break
+    '''
+    # print(bstree.height())
+    # print(bstree.height_r())
+
+    del bstree
+    '''
+    for i in {0, 2, 16, 18, 19, 20, 34, 46, 50, 52, 56, 56, 80, 98, 98, 98}:
+        bstree.delete(i)
+        print(i)
+        bstree.in_order()
+    bstree.delete(98)
     bstree.in_order()
+    bstree.delete(98)
+    bstree.in_order()
+    bstree.delete(56)
+    bstree.in_order()
+    '''
+#    print('')
+#    bstree.inorder_r()
+
+#    bstree.post_order()
+#    print('')
+#    bstree.postorder_r()
+
+#    bstree.preorder()
+#    print('')
+#    bstree.preorder_r()
+
+#    print(bstree.get_first())
+#    for i in (20, 34, 80, 17, -100, 100, 3, 51, 52, 80, 97, 95, 43, 34, 18):
+#        print(i, bstree.get_next(i), end = ' ** ')
+
+#    print()
+#    print(bstree.second_element(True))
+#    print(bstree.second_element(False))
+
+#    for i in range(1, 15):
+#        print(bstree.nth_largest_element(i), end = ' ')
+
     print('')
-    bstree.inorder_r()
-
-    bstree.post_order()
-    print('')
-    bstree.postorder_r()
-
-    bstree.preorder()
-    print('')
-    bstree.preorder_r()
-
-    print(bstree.get_first())
-    for i in (20, 34, 80, 17, -100, 100, 3, 51, 52, 80, 97, 95, 43, 34, 18):
-        print(i, bstree.get_next(i), end = ' ** ')
-
-    print()
-    print(bstree.second_element(True))
-    print(bstree.second_element(False))
-
-    for i in range(1, 15):
-        print(bstree.nth_largest_element(i), end = ' ')
-
-    print('')
-    print(bstree.height())
-    print(bstree.height_r())
+#    print(bstree.height())
+#    print(bstree.height_r())
     # bstree.delete(51)
     # bstree.delete(100)
     # for i in [18, 56, 80, 52, 2, 50, 98, 20, 16, 19, 56, 98, 34, 46]:
@@ -524,10 +814,26 @@ if __name__ == '__main__':
 
     print ('* ' * 10)
     binary_tree = BinaryTree()
-    for i in l:
+    for i in [18, 56, 80, 52, 2, 0, 10, -5, 1, 6, 15, 40, 70, 100, 55, -10]:
         binary_tree.insert(i)
-    print(binary_tree.is_bst())
-    binary_tree.replace(34, 46)
-    binary_tree.in_order()
-    print('')
-    print(binary_tree.is_bst())
+
+    # binary_tree.replace(2, -2)
+    # print(binary_tree.is_bst_rec(), binary_tree.is_bst())
+    # binary_tree.print_all_paths()
+    # binary_tree.print_all_paths_non_rec()
+    # print(binary_tree.minimum_depth())
+    print(binary_tree.is_perfect_binary_tree())
+    # binary_tree.insert(19)
+    # binary_tree.insert(18)
+ #   binary_tree.print_tree()
+#    print(binary_tree.is_complete_binary_tree())
+#    print(binary_tree.is_perfect_binary_tree())
+#    print(binary_tree.is_avl())
+#    binary_tree.print_all_paths()
+#    print(binary_tree.minimum_depth())
+#    binary_tree.print_all_paths_non_rec()
+#    print(binary_tree.is_bst())
+#    binary_tree.replace(34, 46)
+#   binary_tree.in_order()
+#   print('')
+#    print(binary_tree.is_bst())
