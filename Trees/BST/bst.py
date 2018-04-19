@@ -823,6 +823,7 @@ if __name__ == '__main__':
     # binary_tree.print_all_paths_non_rec()
     # print(binary_tree.minimum_depth())
     print(binary_tree.is_perfect_binary_tree())
+    binary_tree.print_tree()
     # binary_tree.insert(19)
     # binary_tree.insert(18)
  #   binary_tree.print_tree()
