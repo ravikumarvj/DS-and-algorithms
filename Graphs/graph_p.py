@@ -1,3 +1,5 @@
+### COPIED ####
+
 from vertex import Vertex
 from abc import ABCMeta, abstractmethod
 
@@ -18,7 +20,7 @@ class Graph:
     def __contains__(self, vert_key):
         return vert_key in self.vert_list
 
-    @abstractmethod
+    @abstractmethod  # For digraph, only one edge. For undirected, add a to b and b to a edge
     def add_edge(self, from_key, to_key, weight=1):
         pass
 
@@ -32,6 +34,8 @@ class Graph:
         return iter(self.vert_list.values())
 
     def __str__(self):
+        ret = ''
         for i in sorted(self.vert_list.keys()):
-            print(self.vert_list[i])
-        return '' # __str__ must return a string
+            # print(self.vert_list[i])  # __str__ must return a string. So instead of printing, we return str
+            ret = ret + str(self.vert_list[i]) + '\n'
+        return ret

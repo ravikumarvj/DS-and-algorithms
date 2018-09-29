@@ -9,7 +9,7 @@ class Node:
         self.links = [None, None]
 
     def __str__(self):
-        return self.data
+        return str(self.data)
 
 
 # Bst is a binary search tree class, which allows duplicates
@@ -462,6 +462,43 @@ class BSTree:
         return
 
     @staticmethod
+    def find(node, data):  # Copied
+        while node:
+            if node.data == data:
+                return True
+            # see which side to move: if data is <= current.data,
+            # we have to move to left, or links[0/False]
+            side = data > node.data
+            node = node.links[side]
+
+        return False
+
+    # A node can be decendant of itself. Assume a != b. Don't assume a and b exists
+    def find_common_ancestor(self, a, b):  # Copied
+        start = self.root
+
+        large = max(a, b)
+        small = min(a, b)
+
+        while start:
+            if start.data == small:
+                if self.find(start.links[1], large):
+                    return small
+                return None
+            if start.data == large:
+                if self.find(start.links[0], small):
+                    return large
+                return None
+            if small < start.data < large:
+                if self.find(start.links[0], small) and self.find(start.links[1], large):
+                    return start.data
+                return None
+            side = small > start.data
+            start = start.links[side]
+
+        return None
+
+    @staticmethod
     def padding(ch, n):
         for _ in range(n):
             print(ch, end='')
@@ -484,239 +521,14 @@ class BSTree:
         print('-' * 20)
 
 
-class BinaryTree(BSTree):
-    def replace(self, frm, to):
-        q = Queue()
-        if self.root is None:
-            return
-
-        q.put(self.root)
-
-        while not q.empty():
-            node = q.get()
-            if node.data == frm:
-                node.data = to
-                return
-
-            if node.links[0]:
-                q.put(node.links[0])
-            if node.links[1]:
-                q.put(node.links[1])
-
-    def _is_bst_rec(self, node):  # Copied
-        l_val, r_val = True, True
-
-        if node.links[0]:
-            l_min, l_max, l_val = self._is_bst_rec(node.links[0])
-            if not l_max <= node.data:
-                return 0, 0, False
-        else:
-            l_max = node.data
-
-        if node.links[1]:
-            r_min, r_max, r_val = self._is_bst_rec(node.links[1])
-            if not node.data < r_min:
-                return 0, 0, False
-        else:
-            r_min = node.data
-
-        if (l_val and r_val) is False:
-            return 0, 0, False
-
-        return l_max, r_min, True
-
-    def is_bst_rec(self):  # Copied
-        return self._is_bst_rec(self.root)[2]
-
-    def is_bst(self):  # Copied
-        # won't work for tree with duplicates because if 46 is right sub child of 46,
-        # it still will be in sorted order. But rules says 46 must be left sub child.
-        if not self.root:
-            return True
-
-        stk = LifoQueue()
-        stk.put((self.root, False))
-        last = None
-
-        while not stk.empty():
-            node, visited = stk.get()
-
-            if visited:
-                print(last, node.data)
-                if last is not None and last > node.data:  # Violates binary search tree property
-                    return False
-                last = node.data  # Save last visited node's data
-            else:
-                if node.links[1]:
-                    stk.put((node.links[1], False))
-                stk.put((node, True))
-                if node.links[0]:
-                    stk.put((node.links[0], False))
-
-        return True  # It is BST, if it dint fail before
-
-    @staticmethod
-    def _print_all_paths(node, l):  # Copied
-        if node is None:
-            return
-
-        l.append(node.data)  # Add node to list
-        if not any(node.links):  # Found a leaf
-            print(l)
-        else: # internal node
-            # print all paths through left node
-            BinaryTree._print_all_paths(node.links[0], l)
-            # print all paths through right node
-            BinaryTree._print_all_paths(node.links[1], l)
-
-        # Done with the node. remove it
-        l.pop()
-
-    def print_all_paths(self):  # Copied
-        self._print_all_paths(self.root, [])
-
-    def print_all_paths_non_rec(self):  # Copied
-        if self.root is None:
-            return
-
-        stk = LifoQueue()
-        path = []
-        stk.put((self.root, False))
-
-        while not stk.empty():
-            node, visited = stk.get()
-
-            if visited:
-                if not any(node.links):  # leaf
-                    print(path)
-                path.pop()
-            else:
-                stk.put((node, True))
-                path.append(node.data)
-                for i in (1, 0):
-                    if node.links[i]:
-                        stk.put((node.links[i], False))
-
-    '''
-    @staticmethod
-    def _is_avl(node):
-        if not node:
-            return True
-
-        if abs(BinaryTree.height(node.links[0]) - BinaryTree.height(node.links[1])) >= 2:
-            return False
-
-        return BinaryTree._is_avl(node.links[0]) and BinaryTree._is_avl(node.links[1])
-    '''
-
-    @staticmethod
-    def _is_avl(node):  # copied
-        if not node:
-            return True, 0
-
-        # using single recursion, calculate if node is balanced, as well as its height
-        left, hl = BinaryTree._is_avl(node.links[0])
-        right, hr = BinaryTree._is_avl(node.links[1])
-
-        height = 1 + max(hl, hr)
-        if abs(hl - hr) >= 2:
-            return False, height
-
-        return (left and right), height
-
-    def is_avl(self):  # Copied
-        if not self.is_bst():  # Don't forget BST check
-            return False
-        return BinaryTree._is_avl(self.root)[0]
-
-    def minimum_depth(self):  # Copied
-        if self.root is None:
-            return -1
-        q = Queue()
-        q.put((self.root, 0))
-
-        while not q.empty():
-            node, lvl = q.get()
-
-            if not any(node.links):  # Found a leaf
-                return lvl
-            if node.links[0]:
-                q.put((node.links[0], lvl + 1))
-            if node.links[1]:
-                q.put((node.links[1], lvl + 1))
-
-    # In a complete binary tree every level, except possibly the last, is completely filled,
-    # and all nodes in the last level are as far left as possible.
-    # It can have between 1 and 2h nodes at the last level h
-    def is_complete_binary_tree(self):  # Copied
-        if self.root is None:
-            return True
-
-        q = Queue()
-        q.put(self.root)
-
-        while not q.empty():
-            node = q.get()
-            if not all(node.links): # Leaves started
-                if node.links[1] is not None:
-                    # If only right node exists, it is not complete
-                    return False
-                if node.links[0] is not None: # Only left node is OK.
-                    q.put(node.links[0])
-                break  # break out
-            q.put(node.links[0])
-            q.put(node.links[1])
-
-        # From now on, all the nodes should be leaves
-        while not q.empty():
-            node = q.get()
-            if any(node.links):
-                return False
-
-        return True
-
-    def is_perfect_binary_tree(self):  # Copied
-        if self.root is None:
-            return True
-
-        q = Queue()
-        q.put((self.root, 1))  # Root is at level 1
-        prev_lvl = 0
-
-        while not q.empty():
-            node, lvl = q.get()
-
-            if not any(node.links):  # leaves started
-                if not lvl == prev_lvl + 1:  # should be a new level
-                    return False
-                prev_lvl = lvl
-                break  # leaves started
-            elif all(node.links): # internal node
-                q.put((node.links[0], lvl + 1))
-                q.put((node.links[1], lvl + 1))
-                prev_lvl = lvl # update lvl
-            else: # Node with one child
-                return False
-
-        while not q.empty():
-            node, lvl = q.get()
-            if any(node.links):  # Non-leaf?
-                return False
-            if lvl != prev_lvl:  # all leaves should be at same level
-                return False
-
-        return True
-
-    # Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
-
-
 if __name__ == '__main__':
     bstree = BSTree()
-    l = [52, 50, 98, 20, 0, 80, 34, 2, 16, 98, 56, 46, 56, 98]
+    l = [52, 50, 98, 20, 0, 80, 34, 2, 16, 56, 46]
 
     for i in l:
         bstree.insert(i)
 
+    # print(bstree.find_common_ancestor(98, 50))
     # bstree.inorder()
     # print()
     # print('count of 20: ', bstree.count(20))
@@ -812,21 +624,24 @@ if __name__ == '__main__':
     #     print('deleted', i)
     #     bstree.inorder()
 
-    print ('* ' * 10)
-    binary_tree = BinaryTree()
-    for i in [18, 56, 80, 52, 2, 0, 10, -5, 1, 6, 15, 40, 70, 100, 55, -10]:
-        binary_tree.insert(i)
+    # print ('* ' * 10)
 
+
+    # binary_tree.print_tree()
     # binary_tree.replace(2, -2)
     # print(binary_tree.is_bst_rec(), binary_tree.is_bst())
     # binary_tree.print_all_paths()
     # binary_tree.print_all_paths_non_rec()
     # print(binary_tree.minimum_depth())
-    print(binary_tree.is_perfect_binary_tree())
-    binary_tree.print_tree()
+    # print(binary_tree.is_perfect_binary_tree())
+    # binary_tree.print_tree()
+    # print(binary_tree.find_common_ancesstor(0, 15))
     # binary_tree.insert(19)
     # binary_tree.insert(18)
- #   binary_tree.print_tree()
+    # binary_tree.print_tree()
+    # binary_tree.find_common_ancestor(-5, 15)
+    # print(binary_tree.find_common_ancestor_present(-5, 15))
+    # binary_tree.find_common_ancestor_iterative(-5, 15)
 #    print(binary_tree.is_complete_binary_tree())
 #    print(binary_tree.is_perfect_binary_tree())
 #    print(binary_tree.is_avl())

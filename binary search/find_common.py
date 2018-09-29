@@ -1,3 +1,5 @@
+### COPIED ###
+
 '''
 Find The Duplicates
 Given two arrays of US social security numbers: Arr1 and Arr2 of lengths n and m respectively, how can you most efficiently compute an array of all persons included on both arrays?
@@ -65,7 +67,7 @@ def find_common_2(a1, a2):
 
         while start <= end:
             if __name__ == '__main__':
-                mid = (start + end)//2  # Division takes too much time. So sort both is good
+                mid = (start + end)//2  # Division takes too much time. So sort both is more efficient
             if small[mid] == i:
                 l.append(i)
             if i < small[mid]:
@@ -106,7 +108,7 @@ if __name__ == '__main__':
 
     for i in range(1000000):
         a1.append(random.randint(1, 25000000))
-    for i in range(1000000):
+    for i in range(100):
         a2.append(random.randint(1, 25000000))
 
     a1 = list(set(a1))

@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca762ecb-0825-47ca-9e0f-a36038bfde10" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="bst.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BST/bst.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="501" column="4" lean-forward="false" selection-start-line="500" selection-start-column="0" selection-end-line="520" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#1401#1527#0" expanded="false" />
+                <element signature="e#1572#1624#0" expanded="false" />
+                <element signature="e#1679#1805#0" expanded="false" />
+                <element signature="e#1851#1904#0" expanded="false" />
+                <element signature="e#1975#2083#0" expanded="false" />
+                <element signature="e#2130#2184#0" expanded="false" />
+                <element signature="e#2231#2529#0" expanded="false" />
+                <element signature="e#2299#2509#0" expanded="false" />
+                <element signature="e#2649#3468#0" expanded="false" />
+                <element signature="e#3536#3614#0" expanded="false" />
+                <element signature="e#3688#4459#0" expanded="false" />
+                <element signature="e#4514#4563#0" expanded="false" />
+                <element signature="e#4611#6080#0" expanded="false" />
+                <element signature="e#6124#6458#0" expanded="false" />
+                <element signature="e#6504#7203#0" expanded="false" />
+                <element signature="e#7252#7376#0" expanded="false" />
+                <element signature="e#7421#7475#0" expanded="false" />
+                <element signature="e#7519#7997#0" expanded="false" />
+                <element signature="e#8042#8409#0" expanded="false" />
+                <element signature="e#8453#8645#0" expanded="false" />
+                <element signature="e#8689#9109#0" expanded="false" />
+                <element signature="e#9154#9368#0" expanded="false" />
+                <element signature="e#9418#9934#0" expanded="false" />
+                <element signature="e#9998#10852#0" expanded="false" />
+                <element signature="e#10858#11368#1" expanded="false" />
+                <element signature="e#11426#12214#0" expanded="false" />
+                <element signature="e#12278#12432#0" expanded="false" />
+                <element signature="e#12476#12510#0" expanded="false" />
+                <element signature="e#12552#12832#0" expanded="false" />
+                <element signature="e#12875#13158#0" expanded="false" />
+                <element signature="e#13222#13512#0" expanded="false" />
+                <element signature="e#13658#14346#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binary_tree.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BST/binary_tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="408" column="37" lean-forward="false" selection-start-line="408" selection-start-column="37" selection-end-line="408" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#539#1091#0" expanded="false" />
+                <element signature="e#1137#1174#0" expanded="false" />
+                <element signature="e#1216#2129#0" expanded="false" />
+                <element signature="e#2202#2655#0" expanded="false" />
+                <element signature="e#2706#2742#0" expanded="false" />
+                <element signature="e#2801#3346#0" expanded="false" />
+                <element signature="e#3352#3653#1" expanded="false" />
+                <element signature="e#3714#4086#0" expanded="false" />
+                <element signature="e#4128#4248#0" expanded="false" />
+                <element signature="e#4297#4694#0" expanded="false" />
+                <element signature="e#4968#5721#0" expanded="false" />
+                <element signature="e#5779#6723#0" expanded="false" />
+                <element signature="e#6894#7083#0" expanded="false" />
+                <element signature="e#7275#7946#0" expanded="false" />
+                <element signature="e#8008#8280#0" expanded="false" />
+                <element signature="e#8369#8794#0" expanded="false" />
+                <element signature="e#8864#8928#0" expanded="false" />
+                <element signature="e#9049#10162#0" expanded="false" />
+                <element signature="e#10212#10249#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="more_tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BST/more_tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="520" column="0" lean-forward="false" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#408#671#0" expanded="false" />
+                <element signature="e#719#1340#0" expanded="false" />
+                <element signature="e#1500#1814#0" expanded="false" />
+                <element signature="e#2066#2507#0" expanded="false" />
+                <element signature="e#2552#3775#0" expanded="false" />
+                <element signature="e#3915#4328#0" expanded="false" />
+                <element signature="e#4382#5180#0" expanded="false" />
+                <element signature="e#5250#5755#0" expanded="false" />
+                <element signature="e#5805#6984#0" expanded="false" />
+                <element signature="e#7051#7832#0" expanded="false" />
+                <element signature="e#7880#9211#0" expanded="false" />
+                <element signature="e#9267#9855#0" expanded="false" />
+                <element signature="e#10104#10283#0" expanded="false" />
+                <element signature="e#10330#10414#0" expanded="false" />
+                <element signature="e#10826#11889#0" expanded="false" />
+                <element signature="e#13315#13336#0" expanded="false" />
+                <element signature="e#13426#14532#0" expanded="false" />
+                <element signature="e#14586#15112#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unbounded_tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trees/unbounded_tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="avl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BST/avl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+              <folding>
+                <element signature="e#408#591#0" expanded="false" />
+                <element signature="e#682#698#0" expanded="false" />
+                <element signature="e#760#795#0" expanded="false" />
+                <element signature="e#864#975#0" expanded="false" />
+                <element signature="e#1219#1489#0" expanded="false" />
+                <element signature="e#1592#1723#0" expanded="false" />
+                <element signature="e#1791#2535#0" expanded="false" />
+                <element signature="e#2691#4166#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wordlist.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trie/wordlist.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130611">
+              <caret line="7683" column="7" lean-forward="false" selection-start-line="7683" selection-start-column="0" selection-end-line="7683" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="words.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trie/words.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trie.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trie/trie.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+              <folding>
+                <element signature="e#499#810#0" expanded="false" />
+                <element signature="e#853#870#0" expanded="false" />
+                <element signature="e#921#1137#0" expanded="false" />
+                <element signature="e#1183#1885#0" expanded="false" />
+                <element signature="e#1957#2267#0" expanded="false" />
+                <element signature="e#2313#2367#0" expanded="false" />
+                <element signature="e#2427#2676#0" expanded="false" />
+                <element signature="e#2729#3599#0" expanded="false" />
+                <element signature="e#3682#4770#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spell_checker.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trie/spell_checker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2176">
+              <caret line="129" column="55" lean-forward="false" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xor_array.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trie/xor_array.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#107#316#0" expanded="false" />
+                <element signature="e#348#2651#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bst.</find>
+      <find>Lifo</find>
+      <find>find_sma</find>
+      <find>_delete(</find>
+      <find>False</find>
+      <find>LifoQ</find>
+      <find>dir</find>
+      <find>print</find>
+      <find>find_</find>
+      <find>is_bst</find>
+      <find>correct</find>
+      <find>_search</find>
+      <find>count</find>
+      <find>in_order</find>
+      <find>replace</find>
+      <find>l_min</find>
+      <find>smallest</find>
+      <find>height</find>
+      <find>struc</find>
+      <find>bst</find>
+      <find>inver</find>
+      <find>inorder</find>
+      <find>BinaryTree</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BST/binary-tree.py" />
+        <option value="$PROJECT_DIR$/Misc/alphametics.py" />
+        <option value="$PROJECT_DIR$/binary search/shifted_array.py" />
+        <option value="$PROJECT_DIR$/binary search/find_common.py" />
+        <option value="$PROJECT_DIR$/binary search/meeting_planner.py" />
+        <option value="$PROJECT_DIR$/Misc/reverse_word.py" />
+        <option value="$PROJECT_DIR$/AVL/avl.c.py" />
+        <option value="$PROJECT_DIR$/BST/avl.py" />
+        <option value="$PROJECT_DIR$/Trie/trie.py" />
+        <option value="$PROJECT_DIR$/Trie/spell_checker.py" />
+        <option value="$PROJECT_DIR$/Trie/xor_array.py" />
+        <option value="$PROJECT_DIR$/Trees/unbounded_tree.py" />
+        <option value="$PROJECT_DIR$/BST/convert_DLL_to_BST.py" />
+        <option value="$PROJECT_DIR$/Trees/expression_tree.py" />
+        <option value="$PROJECT_DIR$/BST/more_tree.py" />
+        <option value="$PROJECT_DIR$/BST/bst.py" />
+        <option value="$PROJECT_DIR$/BST/binary_tree.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.binary_tree">
+    <configuration default="false" name="more_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BST" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BST/more_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="unbounded_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trees" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trees/unbounded_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="convert_DLL_to_BST" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BST" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BST/convert_DLL_to_BST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="expression_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trees" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trees/expression_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="binary_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BST" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BST/binary_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Trees" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.more_tree" />
+      <item index="1" class="java.lang.String" itemvalue="Python.unbounded_tree" />
+      <item index="2" class="java.lang.String" itemvalue="Python.convert_DLL_to_BST" />
+      <item index="3" class="java.lang.String" itemvalue="Python.expression_tree" />
+      <item index="4" class="java.lang.String" itemvalue="Python.binary_tree" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.binary_tree" />
+        <item index="1" class="java.lang.String" itemvalue="Python.more_tree" />
+        <item index="2" class="java.lang.String" itemvalue="Python.expression_tree" />
+        <item index="3" class="java.lang.String" itemvalue="Python.convert_DLL_to_BST" />
+        <item index="4" class="java.lang.String" itemvalue="Python.unbounded_tree" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca762ecb-0825-47ca-9e0f-a36038bfde10" name="Default" comment="" />
+      <created>1522312207252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522312207252</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12961012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21753247" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18614718" sideWeight="0.49578503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BST/bst.py</url>
+          <line>211</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BST/bst.py</url>
+          <line>265</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Trie/trie.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Trie/trie.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Trie/xor_array.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Trie/xor_array.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BST/bst.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BST/more_tree.py</url>
+          <line>279</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BST/more_tree.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Trie/words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="e#499#810#0" expanded="false" />
+            <element signature="e#853#870#0" expanded="false" />
+            <element signature="e#921#1137#0" expanded="false" />
+            <element signature="e#1183#1885#0" expanded="false" />
+            <element signature="e#1957#2267#0" expanded="false" />
+            <element signature="e#2313#2367#0" expanded="false" />
+            <element signature="e#2427#2676#0" expanded="false" />
+            <element signature="e#2729#3599#0" expanded="false" />
+            <element signature="e#3682#4770#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/spell_checker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="129" column="55" lean-forward="false" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/xor_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#316#0" expanded="false" />
+            <element signature="e#348#2651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/bst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1401#1527#0" expanded="false" />
+            <element signature="e#1572#1624#0" expanded="false" />
+            <element signature="e#1679#1805#0" expanded="false" />
+            <element signature="e#1851#1904#0" expanded="false" />
+            <element signature="e#1975#2083#0" expanded="false" />
+            <element signature="e#2130#2184#0" expanded="false" />
+            <element signature="e#2231#2529#0" expanded="false" />
+            <element signature="e#2299#2509#0" expanded="false" />
+            <element signature="e#2649#3468#0" expanded="false" />
+            <element signature="e#3536#3614#0" expanded="false" />
+            <element signature="e#3688#4459#0" expanded="false" />
+            <element signature="e#4514#4563#0" expanded="false" />
+            <element signature="e#4611#6080#0" expanded="false" />
+            <element signature="e#6124#6458#0" expanded="false" />
+            <element signature="e#6504#7203#0" expanded="false" />
+            <element signature="e#7252#7376#0" expanded="false" />
+            <element signature="e#7421#7475#0" expanded="false" />
+            <element signature="e#7519#7997#0" expanded="false" />
+            <element signature="e#8042#8409#0" expanded="false" />
+            <element signature="e#8453#8645#0" expanded="false" />
+            <element signature="e#8689#9109#0" expanded="false" />
+            <element signature="e#9154#9368#0" expanded="false" />
+            <element signature="e#9418#9934#0" expanded="false" />
+            <element signature="e#9998#10852#0" expanded="false" />
+            <element signature="e#10858#11368#1" expanded="false" />
+            <element signature="e#11426#12214#0" expanded="false" />
+            <element signature="e#12278#12432#0" expanded="false" />
+            <element signature="e#12476#12510#0" expanded="false" />
+            <element signature="e#12552#12832#0" expanded="false" />
+            <element signature="e#12875#13158#0" expanded="false" />
+            <element signature="e#13222#13512#0" expanded="false" />
+            <element signature="e#13658#14346#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/more_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5117">
+          <caret line="302" column="4" lean-forward="false" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#408#671#0" expanded="false" />
+            <element signature="e#719#1340#0" expanded="false" />
+            <element signature="e#1500#1814#0" expanded="false" />
+            <element signature="e#2066#2507#0" expanded="false" />
+            <element signature="e#2552#3775#0" expanded="false" />
+            <element signature="e#3915#4328#0" expanded="false" />
+            <element signature="e#4382#5180#0" expanded="false" />
+            <element signature="e#5250#5755#0" expanded="false" />
+            <element signature="e#5805#6984#0" expanded="false" />
+            <element signature="e#7051#7832#0" expanded="false" />
+            <element signature="e#7880#9211#0" expanded="false" />
+            <element signature="e#9267#9855#0" expanded="false" />
+            <element signature="e#10104#10283#0" expanded="false" />
+            <element signature="e#10330#10414#0" expanded="false" />
+            <element signature="e#10826#11889#0" expanded="false" />
+            <element signature="e#13315#13336#0" expanded="false" />
+            <element signature="e#13426#14532#0" expanded="false" />
+            <element signature="e#14586#15112#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/avl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="e#408#591#0" expanded="false" />
+            <element signature="e#682#698#0" expanded="false" />
+            <element signature="e#760#795#0" expanded="false" />
+            <element signature="e#864#975#0" expanded="false" />
+            <element signature="e#1219#1489#0" expanded="false" />
+            <element signature="e#1592#1723#0" expanded="false" />
+            <element signature="e#1791#2535#0" expanded="false" />
+            <element signature="e#2691#4166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/wordlist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130611">
+          <caret line="7683" column="7" lean-forward="false" selection-start-line="7683" selection-start-column="0" selection-end-line="7683" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="e#499#810#0" expanded="false" />
+            <element signature="e#853#870#0" expanded="false" />
+            <element signature="e#921#1137#0" expanded="false" />
+            <element signature="e#1183#1885#0" expanded="false" />
+            <element signature="e#1957#2267#0" expanded="false" />
+            <element signature="e#2313#2367#0" expanded="false" />
+            <element signature="e#2427#2676#0" expanded="false" />
+            <element signature="e#2729#3599#0" expanded="false" />
+            <element signature="e#3682#4770#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/spell_checker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="129" column="55" lean-forward="false" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/xor_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#316#0" expanded="false" />
+            <element signature="e#348#2651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/bst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1401#1527#0" expanded="false" />
+            <element signature="e#1572#1624#0" expanded="false" />
+            <element signature="e#1679#1805#0" expanded="false" />
+            <element signature="e#1851#1904#0" expanded="false" />
+            <element signature="e#1975#2083#0" expanded="false" />
+            <element signature="e#2130#2184#0" expanded="false" />
+            <element signature="e#2231#2529#0" expanded="false" />
+            <element signature="e#2299#2509#0" expanded="false" />
+            <element signature="e#2649#3468#0" expanded="false" />
+            <element signature="e#3536#3614#0" expanded="false" />
+            <element signature="e#3688#4459#0" expanded="false" />
+            <element signature="e#4514#4563#0" expanded="false" />
+            <element signature="e#4611#6080#0" expanded="false" />
+            <element signature="e#6124#6458#0" expanded="false" />
+            <element signature="e#6504#7203#0" expanded="false" />
+            <element signature="e#7252#7376#0" expanded="false" />
+            <element signature="e#7421#7475#0" expanded="false" />
+            <element signature="e#7519#7997#0" expanded="false" />
+            <element signature="e#8042#8409#0" expanded="false" />
+            <element signature="e#8453#8645#0" expanded="false" />
+            <element signature="e#8689#9109#0" expanded="false" />
+            <element signature="e#9154#9368#0" expanded="false" />
+            <element signature="e#9418#9934#0" expanded="false" />
+            <element signature="e#9998#10852#0" expanded="false" />
+            <element signature="e#10858#11368#1" expanded="false" />
+            <element signature="e#11426#12214#0" expanded="false" />
+            <element signature="e#12278#12432#0" expanded="false" />
+            <element signature="e#12476#12510#0" expanded="false" />
+            <element signature="e#12552#12832#0" expanded="false" />
+            <element signature="e#12875#13158#0" expanded="false" />
+            <element signature="e#13222#13512#0" expanded="false" />
+            <element signature="e#13658#14346#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/avl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="e#408#591#0" expanded="false" />
+            <element signature="e#682#698#0" expanded="false" />
+            <element signature="e#760#795#0" expanded="false" />
+            <element signature="e#864#975#0" expanded="false" />
+            <element signature="e#1219#1489#0" expanded="false" />
+            <element signature="e#1592#1723#0" expanded="false" />
+            <element signature="e#1791#2535#0" expanded="false" />
+            <element signature="e#2691#4166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/wordlist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130611">
+          <caret line="7683" column="7" lean-forward="false" selection-start-line="7683" selection-start-column="0" selection-end-line="7683" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="e#499#810#0" expanded="false" />
+            <element signature="e#853#870#0" expanded="false" />
+            <element signature="e#921#1137#0" expanded="false" />
+            <element signature="e#1183#1885#0" expanded="false" />
+            <element signature="e#1957#2267#0" expanded="false" />
+            <element signature="e#2313#2367#0" expanded="false" />
+            <element signature="e#2427#2676#0" expanded="false" />
+            <element signature="e#2729#3599#0" expanded="false" />
+            <element signature="e#3682#4770#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/spell_checker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="129" column="55" lean-forward="true" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/xor_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#316#0" expanded="false" />
+            <element signature="e#348#2651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/bst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1401#1527#0" expanded="false" />
+            <element signature="e#1572#1624#0" expanded="false" />
+            <element signature="e#1679#1805#0" expanded="false" />
+            <element signature="e#1851#1904#0" expanded="false" />
+            <element signature="e#1975#2083#0" expanded="false" />
+            <element signature="e#2130#2184#0" expanded="false" />
+            <element signature="e#2231#2529#0" expanded="false" />
+            <element signature="e#2299#2509#0" expanded="false" />
+            <element signature="e#2649#3468#0" expanded="false" />
+            <element signature="e#3536#3614#0" expanded="false" />
+            <element signature="e#3688#4459#0" expanded="false" />
+            <element signature="e#4514#4563#0" expanded="false" />
+            <element signature="e#4611#6080#0" expanded="false" />
+            <element signature="e#6124#6458#0" expanded="false" />
+            <element signature="e#6504#7203#0" expanded="false" />
+            <element signature="e#7252#7376#0" expanded="false" />
+            <element signature="e#7421#7475#0" expanded="false" />
+            <element signature="e#7519#7997#0" expanded="false" />
+            <element signature="e#8042#8409#0" expanded="false" />
+            <element signature="e#8453#8645#0" expanded="false" />
+            <element signature="e#8689#9109#0" expanded="false" />
+            <element signature="e#9154#9368#0" expanded="false" />
+            <element signature="e#9418#9934#0" expanded="false" />
+            <element signature="e#9998#10852#0" expanded="false" />
+            <element signature="e#10858#11368#1" expanded="false" />
+            <element signature="e#11426#12214#0" expanded="false" />
+            <element signature="e#12278#12432#0" expanded="false" />
+            <element signature="e#12476#12510#0" expanded="false" />
+            <element signature="e#12552#12832#0" expanded="false" />
+            <element signature="e#12875#13158#0" expanded="false" />
+            <element signature="e#13222#13512#0" expanded="false" />
+            <element signature="e#13658#14346#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/avl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="e#408#591#0" expanded="false" />
+            <element signature="e#682#698#0" expanded="false" />
+            <element signature="e#760#795#0" expanded="false" />
+            <element signature="e#864#975#0" expanded="false" />
+            <element signature="e#1219#1489#0" expanded="false" />
+            <element signature="e#1592#1723#0" expanded="false" />
+            <element signature="e#1791#2535#0" expanded="false" />
+            <element signature="e#2691#4166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/wordlist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130611">
+          <caret line="7683" column="7" lean-forward="false" selection-start-line="7683" selection-start-column="0" selection-end-line="7683" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="e#499#810#0" expanded="false" />
+            <element signature="e#853#870#0" expanded="false" />
+            <element signature="e#921#1137#0" expanded="false" />
+            <element signature="e#1183#1885#0" expanded="false" />
+            <element signature="e#1957#2267#0" expanded="false" />
+            <element signature="e#2313#2367#0" expanded="false" />
+            <element signature="e#2427#2676#0" expanded="false" />
+            <element signature="e#2729#3599#0" expanded="false" />
+            <element signature="e#3682#4770#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/spell_checker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="129" column="55" lean-forward="true" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/xor_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#316#0" expanded="false" />
+            <element signature="e#348#2651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/bst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1401#1527#0" expanded="false" />
+            <element signature="e#1572#1624#0" expanded="false" />
+            <element signature="e#1679#1805#0" expanded="false" />
+            <element signature="e#1851#1904#0" expanded="false" />
+            <element signature="e#1975#2083#0" expanded="false" />
+            <element signature="e#2130#2184#0" expanded="false" />
+            <element signature="e#2231#2529#0" expanded="false" />
+            <element signature="e#2299#2509#0" expanded="false" />
+            <element signature="e#2649#3468#0" expanded="false" />
+            <element signature="e#3536#3614#0" expanded="false" />
+            <element signature="e#3688#4459#0" expanded="false" />
+            <element signature="e#4514#4563#0" expanded="false" />
+            <element signature="e#4611#6080#0" expanded="false" />
+            <element signature="e#6124#6458#0" expanded="false" />
+            <element signature="e#6504#7203#0" expanded="false" />
+            <element signature="e#7252#7376#0" expanded="false" />
+            <element signature="e#7421#7475#0" expanded="false" />
+            <element signature="e#7519#7997#0" expanded="false" />
+            <element signature="e#8042#8409#0" expanded="false" />
+            <element signature="e#8453#8645#0" expanded="false" />
+            <element signature="e#8689#9109#0" expanded="false" />
+            <element signature="e#9154#9368#0" expanded="false" />
+            <element signature="e#9418#9934#0" expanded="false" />
+            <element signature="e#9998#10852#0" expanded="false" />
+            <element signature="e#10858#11368#1" expanded="false" />
+            <element signature="e#11426#12214#0" expanded="false" />
+            <element signature="e#12278#12432#0" expanded="false" />
+            <element signature="e#12476#12510#0" expanded="false" />
+            <element signature="e#12552#12832#0" expanded="false" />
+            <element signature="e#12875#13158#0" expanded="false" />
+            <element signature="e#13222#13512#0" expanded="false" />
+            <element signature="e#13658#14346#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/avl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="50" lean-forward="true" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="50" />
+          <folding>
+            <element signature="e#408#591#0" expanded="false" />
+            <element signature="e#682#698#0" expanded="false" />
+            <element signature="e#760#795#0" expanded="false" />
+            <element signature="e#864#975#0" expanded="false" />
+            <element signature="e#1219#1489#0" expanded="false" />
+            <element signature="e#1592#1723#0" expanded="false" />
+            <element signature="e#1791#2535#0" expanded="false" />
+            <element signature="e#2691#4166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/wordlist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130611">
+          <caret line="7683" column="7" lean-forward="false" selection-start-line="7683" selection-start-column="0" selection-end-line="7683" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="19" lean-forward="true" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+          <folding>
+            <element signature="e#499#810#0" expanded="false" />
+            <element signature="e#853#870#0" expanded="false" />
+            <element signature="e#921#1137#0" expanded="false" />
+            <element signature="e#1183#1885#0" expanded="false" />
+            <element signature="e#1957#2267#0" expanded="false" />
+            <element signature="e#2313#2367#0" expanded="false" />
+            <element signature="e#2427#2676#0" expanded="false" />
+            <element signature="e#2729#3599#0" expanded="false" />
+            <element signature="e#3682#4770#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/spell_checker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/bst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1401#1527#0" expanded="false" />
+            <element signature="e#1572#1624#0" expanded="false" />
+            <element signature="e#1679#1805#0" expanded="false" />
+            <element signature="e#1851#1904#0" expanded="false" />
+            <element signature="e#1975#2083#0" expanded="false" />
+            <element signature="e#2130#2184#0" expanded="false" />
+            <element signature="e#2231#2529#0" expanded="false" />
+            <element signature="e#2299#2509#0" expanded="false" />
+            <element signature="e#2649#3468#0" expanded="false" />
+            <element signature="e#3536#3614#0" expanded="false" />
+            <element signature="e#3688#4459#0" expanded="false" />
+            <element signature="e#4514#4563#0" expanded="false" />
+            <element signature="e#4611#6080#0" expanded="false" />
+            <element signature="e#6124#6458#0" expanded="false" />
+            <element signature="e#6504#7203#0" expanded="false" />
+            <element signature="e#7252#7376#0" expanded="false" />
+            <element signature="e#7421#7475#0" expanded="false" />
+            <element signature="e#7519#7997#0" expanded="false" />
+            <element signature="e#8042#8409#0" expanded="false" />
+            <element signature="e#8453#8645#0" expanded="false" />
+            <element signature="e#8689#9109#0" expanded="false" />
+            <element signature="e#9154#9368#0" expanded="false" />
+            <element signature="e#9418#9934#0" expanded="false" />
+            <element signature="e#9998#10852#0" expanded="false" />
+            <element signature="e#10858#11368#1" expanded="false" />
+            <element signature="e#11426#12214#0" expanded="false" />
+            <element signature="e#12278#12432#0" expanded="false" />
+            <element signature="e#12476#12510#0" expanded="false" />
+            <element signature="e#12552#12832#0" expanded="false" />
+            <element signature="e#12875#13158#0" expanded="false" />
+            <element signature="e#13222#13512#0" expanded="false" />
+            <element signature="e#13658#14346#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/binary-tree.py" />
+    <entry file="file://$PROJECT_DIR$/Misc/alphametics.py" />
+    <entry file="file://$PROJECT_DIR$/binary search/shifted_array.py" />
+    <entry file="file://$PROJECT_DIR$/binary search/find_common.py" />
+    <entry file="file://$PROJECT_DIR$/binary search/meeting_planner.py" />
+    <entry file="file://$PROJECT_DIR$/Misc/reverse_word.py" />
+    <entry file="file://$PROJECT_DIR$/AVL/avl.c.py" />
+    <entry file="file://$PROJECT_DIR$/Trie/words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/wordlist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130611">
+          <caret line="7683" column="7" lean-forward="false" selection-start-line="7683" selection-start-column="0" selection-end-line="7683" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/spell_checker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="129" column="55" lean-forward="false" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="e#499#810#0" expanded="false" />
+            <element signature="e#853#870#0" expanded="false" />
+            <element signature="e#921#1137#0" expanded="false" />
+            <element signature="e#1183#1885#0" expanded="false" />
+            <element signature="e#1957#2267#0" expanded="false" />
+            <element signature="e#2313#2367#0" expanded="false" />
+            <element signature="e#2427#2676#0" expanded="false" />
+            <element signature="e#2729#3599#0" expanded="false" />
+            <element signature="e#3682#4770#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trie/xor_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#316#0" expanded="false" />
+            <element signature="e#348#2651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/convert_DLL_to_BST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trees/unbounded_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trees/expression_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/avl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding>
+            <element signature="e#408#591#0" expanded="false" />
+            <element signature="e#682#698#0" expanded="false" />
+            <element signature="e#760#795#0" expanded="false" />
+            <element signature="e#864#975#0" expanded="false" />
+            <element signature="e#1219#1489#0" expanded="false" />
+            <element signature="e#1592#1723#0" expanded="false" />
+            <element signature="e#1791#2535#0" expanded="false" />
+            <element signature="e#2691#4166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/more_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="520" column="0" lean-forward="false" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#408#671#0" expanded="false" />
+            <element signature="e#719#1340#0" expanded="false" />
+            <element signature="e#1500#1814#0" expanded="false" />
+            <element signature="e#2066#2507#0" expanded="false" />
+            <element signature="e#2552#3775#0" expanded="false" />
+            <element signature="e#3915#4328#0" expanded="false" />
+            <element signature="e#4382#5180#0" expanded="false" />
+            <element signature="e#5250#5755#0" expanded="false" />
+            <element signature="e#5805#6984#0" expanded="false" />
+            <element signature="e#7051#7832#0" expanded="false" />
+            <element signature="e#7880#9211#0" expanded="false" />
+            <element signature="e#9267#9855#0" expanded="false" />
+            <element signature="e#10104#10283#0" expanded="false" />
+            <element signature="e#10330#10414#0" expanded="false" />
+            <element signature="e#10826#11889#0" expanded="false" />
+            <element signature="e#13315#13336#0" expanded="false" />
+            <element signature="e#13426#14532#0" expanded="false" />
+            <element signature="e#14586#15112#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/bst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="501" column="4" lean-forward="false" selection-start-line="500" selection-start-column="0" selection-end-line="520" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1401#1527#0" expanded="false" />
+            <element signature="e#1572#1624#0" expanded="false" />
+            <element signature="e#1679#1805#0" expanded="false" />
+            <element signature="e#1851#1904#0" expanded="false" />
+            <element signature="e#1975#2083#0" expanded="false" />
+            <element signature="e#2130#2184#0" expanded="false" />
+            <element signature="e#2231#2529#0" expanded="false" />
+            <element signature="e#2299#2509#0" expanded="false" />
+            <element signature="e#2649#3468#0" expanded="false" />
+            <element signature="e#3536#3614#0" expanded="false" />
+            <element signature="e#3688#4459#0" expanded="false" />
+            <element signature="e#4514#4563#0" expanded="false" />
+            <element signature="e#4611#6080#0" expanded="false" />
+            <element signature="e#6124#6458#0" expanded="false" />
+            <element signature="e#6504#7203#0" expanded="false" />
+            <element signature="e#7252#7376#0" expanded="false" />
+            <element signature="e#7421#7475#0" expanded="false" />
+            <element signature="e#7519#7997#0" expanded="false" />
+            <element signature="e#8042#8409#0" expanded="false" />
+            <element signature="e#8453#8645#0" expanded="false" />
+            <element signature="e#8689#9109#0" expanded="false" />
+            <element signature="e#9154#9368#0" expanded="false" />
+            <element signature="e#9418#9934#0" expanded="false" />
+            <element signature="e#9998#10852#0" expanded="false" />
+            <element signature="e#10858#11368#1" expanded="false" />
+            <element signature="e#11426#12214#0" expanded="false" />
+            <element signature="e#12278#12432#0" expanded="false" />
+            <element signature="e#12476#12510#0" expanded="false" />
+            <element signature="e#12552#12832#0" expanded="false" />
+            <element signature="e#12875#13158#0" expanded="false" />
+            <element signature="e#13222#13512#0" expanded="false" />
+            <element signature="e#13658#14346#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/binary_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="408" column="37" lean-forward="false" selection-start-line="408" selection-start-column="37" selection-end-line="408" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#539#1091#0" expanded="false" />
+            <element signature="e#1137#1174#0" expanded="false" />
+            <element signature="e#1216#2129#0" expanded="false" />
+            <element signature="e#2202#2655#0" expanded="false" />
+            <element signature="e#2706#2742#0" expanded="false" />
+            <element signature="e#2801#3346#0" expanded="false" />
+            <element signature="e#3352#3653#1" expanded="false" />
+            <element signature="e#3714#4086#0" expanded="false" />
+            <element signature="e#4128#4248#0" expanded="false" />
+            <element signature="e#4297#4694#0" expanded="false" />
+            <element signature="e#4968#5721#0" expanded="false" />
+            <element signature="e#5779#6723#0" expanded="false" />
+            <element signature="e#6894#7083#0" expanded="false" />
+            <element signature="e#7275#7946#0" expanded="false" />
+            <element signature="e#8008#8280#0" expanded="false" />
+            <element signature="e#8369#8794#0" expanded="false" />
+            <element signature="e#8864#8928#0" expanded="false" />
+            <element signature="e#9049#10162#0" expanded="false" />
+            <element signature="e#10212#10249#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

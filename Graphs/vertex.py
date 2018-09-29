@@ -1,7 +1,8 @@
+### COPIED ###
 class Vertex:
     def __init__(self, key):
         self.key = key
-        self.neighs = {}
+        self.neighs = {} # No multiple edges to same neighbour
 
     # Add edge from this vertex with given weight to neigh_key
     def add_neigh(self, neigh_key, weight = 1):
