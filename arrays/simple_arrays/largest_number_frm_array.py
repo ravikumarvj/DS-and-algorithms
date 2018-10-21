@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 from functools import cmp_to_key
 
 def my_cmp(a, b):  # Normal comparator. -1 if a < b, 0 if a==b and 1 if a>b.
@@ -18,21 +18,9 @@ def make_largest(array):
     print(''.join([str(a) for a in array]))
 
 
-# array = [72, 70, 7, 9, 76, 78, 5]
+array = [72, 70, 7, 9, 76, 78, 5]
 # array = [1, 34, 3, 98, 9, 76, 45, 4]
-# make_largest(array)
-
-
-from functools import cmp_to_key
-
-def my_cmp(a, b): # Normal comparator. -1 if a < b, 0 if a==b and 1 if a>b.
-    one = str(a) + str(b)
-    two = str(b) + str(a)
-    if one < two:
-        return -1
-    if one == two:
-        return 0
-    return 1
+make_largest(array)
 
 array = [72, 70, 7, 9, 76, 78, 5]
 print(sorted(array, key=cmp_to_key(my_cmp)))

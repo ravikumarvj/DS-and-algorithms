@@ -1,4 +1,4 @@
-### COPIED ####
+### COPIED ####  VERIFIED
 
 def print_parentheses(so_far, index, left_count, right_count):
     if left_count == 0 and right_count == 0:
@@ -27,7 +27,7 @@ def generate_parenthesis(count):
     # keep a left count and right count to keep track of left and right parenthesis
     print_parentheses(p_list, 0, half, half)
 
-# generate_parenthesis(6)
+generate_parenthesis(6)
 
 
 def print_numbers(p_list, index, one_half, zero_half):

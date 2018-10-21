@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 def next_larger(num):   # 4 2 3 8 6 2
     l = list(str(num))

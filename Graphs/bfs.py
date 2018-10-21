@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 from digraph import DiGraph
 from queue import Queue

@@ -1,3 +1,4 @@
+##### COPIED #### VERIFIED
 '''
  object.__bool__(self)
  Called  to implement truth value testing and the built - in operation bool();

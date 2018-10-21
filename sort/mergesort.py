@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 def merge(array, start, mid, end):
     temp1 = array[start:mid]  # Extra space O(n)

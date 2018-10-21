@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###   VERIFIED
 """
 Longest increasing subarray (contiguous)
 Given an array containing n numbers. The problem is to find the length of the longest contiguous subarray such that every element in the subarray is strictly greater than its previous element in the same subarray. Time Complexity should be O(n).
@@ -14,28 +14,28 @@ Output : 4
 The subarray is {4, 7, 8, 10}
 """
 
-
 def longest_increasing_subarray(array):
-    start, end = 0, 0
-    if len(array) < 2:
-        print(len(array), ':', array)
+    if len(array) == 1:
+        print('1: ', array)
+        return
 
-    max_l, max_s = 0, 0
+    start, end = 0, 1   # sliding window. End exclusive
+    max_start, max_len = 0, 1  # maximum so far. No need of max_end
 
     while end < len(array):
-        # end + 1 check to avoid special case of checking, last (or only) sequence outside the loop as is [0, 1, 2]
-        if (end + 1) < len(array) and array[end] < array[end + 1]:
+        if array[end] > array[end-1]:  # end can be added to the SW
             end += 1
-        else:
-            length = (end - start) + 1  # + 1, coz, end is included
-            if length > max_l:
-                max_l = length
-                max_s = start
-            end += 1
+            if end - start > max_len:
+                max_start = start
+                max_len = end - start
+        else:  # New window, starting at end
             start = end
+            end += 1
 
-    print(max_l, ':', array[max_s: max_s + max_l])
+    print(max_len, ':', array[max_start: max_start + max_len])
+    return
+
 
 if __name__ == '__main__':
-    array = [12, 13, 10]
+    array = [1, 1, 1, 2, 3, 4, 4, 4, 4]
     longest_increasing_subarray(array)

@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####  VERIFIED
 """
 Given two Boolean arrays X and Y, find the length of longest continuous sequence that
 starts and ends at same index in both arrays and have same sum. In other words,

@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 """
 Modify the array by moving all the zeros to the end (right side). The order of other elements doesn’t matter.
 Let’s have an example. For array [1, 2, 0, 3, 0, 1, 2], the program can output [1, 2, 3, 1, 2, 0, 0].

@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 def selection_sort(array):
     if len(array) <= 1:

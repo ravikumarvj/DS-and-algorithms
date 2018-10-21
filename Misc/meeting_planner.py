@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 '''
 Implement a meeting planner that can schedule meetings between two persons at a time.
 Time is represented by Unix format (also called Epoch) - a positive integer holding the seconds since January 1st, 1970 at midnight.

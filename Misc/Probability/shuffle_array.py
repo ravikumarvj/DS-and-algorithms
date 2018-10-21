@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####   VERIFIED
 """
 Shuffle a given array
 Given an array, write a program to generate a random permutation of array elements. This question is also asked as “shuffle a deck of cards” or “randomize a given array”.

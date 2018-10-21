@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###   VERIFIED
 """
 Find 2 numbers in a sorted array that sum to M
 Given a sorted array and a number M, find two numbers in sorted array whose sum equals to M.

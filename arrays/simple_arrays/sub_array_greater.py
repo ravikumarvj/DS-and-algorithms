@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 def subarray_greater_sum(arr, value):
     sw_sum, sw_start, sw_end = 0, 0, float('inf')
     sum_so_far, start, end = 0, 0, 0

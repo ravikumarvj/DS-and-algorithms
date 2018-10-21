@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 class UnionFind:
     # Assume node numbers start from 1...N

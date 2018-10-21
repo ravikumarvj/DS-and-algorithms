@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####  VERIFIED
 def find_max(string, k, index):
     max_so_far = int(''.join(string))
     find_max.count += 1

@@ -1,58 +1,4 @@
-### COPIED ###
-
-
-# Solved using sliding window, as well as keeping count of each character of array within the sliding window
-# array should have only unique characters
-def find_min_substr(string, array):
-    s = dict()
-    for i in array:  # Move the elements of array to a dictionary,
-        s[i] = 0     # for easy lookup as well as for keeping count
-
-    start, end = 0, 0  # Sliding window (SW)
-    total = 0          # Number of elements of array, currently withing SW
-    min_len, min_start = len(string) + 1, 0   # minimum length we have seen so far
-
-    while end < len(string):
-        while end < len(string):  # increase window such that all the elements
-            c = string[end]       # of array is within window.
-            end += 1              # This may include redundant characters in the
-            if c not in s:        # front of the window
-                continue
-
-            if s[c] >= 1:         # If a member of array is already seen increase its count
-                s[c] += 1
-            else:
-                s[c] = 1
-                total += 1
-                if total == len(s):  # Once all the elements are found, close the window
-                    break
-
-        # Either total == len(set) or end == len(string)
-        while start < len(string):  # remove leading redundant characters
-            c = string[start]
-            start += 1
-            if c not in s:
-                continue
-            if s[c] > 1:
-                s[c] -= 1
-            else:  # move as much, such that total is about to be decreased.
-                length = end - start + 1  # New length
-                if length < min_len:
-                    min_len = length
-                    min_start = start - 1
-
-                s[c] -= 1  # s[c] is now 0. So, decrease total
-                total -= 1  # break out of loop now.
-                break
-
-    # String parsing over
-    if min_len < len(string):
-        print(min_start, min_len)
-        print(string[min_start:min_start + min_len])
-    else:
-        print('None')
-
-
+### COPIED ###  VERIFIED
 from collections import defaultdict
 
 
@@ -118,8 +64,8 @@ def minWindow(s, t):
 if __name__ == '__main__':
     # string = 'xaxzbyxaabyyzcxbbyyzxx'
     string = 'xyzdaaabcdabcad'
-    array = ['a', 'b', 'd']
+    array = ['a', 'b', 'd', 'd']
     find_min_substr(string, array)
     string = 'xyzdaaabcdabcad'
-    t = 'abd'
+    t = 'abdd'
     minWindow(string, t)

@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####    VERIFIED
 from queue import LifoQueue, Queue
 
 

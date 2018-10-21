@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 """
 Given an array of numbers in the range 1..100,

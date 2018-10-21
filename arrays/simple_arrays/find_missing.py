@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####  VERIFIED
 """
 Given an array of length n, containing numbers from 1 to n,
 except that one of the numbers is repeated and another is missing, find the missing number

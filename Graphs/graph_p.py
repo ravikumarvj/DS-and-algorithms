@@ -1,4 +1,4 @@
-### COPIED ####
+### COPIED ####   VERIFIED
 
 from vertex import Vertex
 from abc import ABCMeta, abstractmethod

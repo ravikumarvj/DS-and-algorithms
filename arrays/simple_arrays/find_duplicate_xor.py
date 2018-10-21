@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 def find_duplicate(array):
     xor_val = 0
     for i in array:

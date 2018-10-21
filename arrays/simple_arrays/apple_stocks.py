@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  Verified
 
 """
 I grabbed Apple's stock prices from yesterday and put them in a list called stock_prices, where:

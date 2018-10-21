@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 def check_interleaving_r(main, sub_1, sub_2, main_index, sub_1_index, sub_2_index):
     if main_index == len(main) and sub_1_index == len(sub_1) and sub_2_index == len(sub_2):

@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 from random import randint
 
 def print_k_from_stream(stream, k):

@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 from graph import NGraph
 from priority_queue import PriorityQueue
 

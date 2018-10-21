@@ -1,4 +1,4 @@
-####  COPIED ####
+####  COPIED ####   VERIFIED
 # assume a and b present in array. Find the minimum difference between their indices in array
 def find_index_difference(arr, a, b):
     min_a, min_b = None, None

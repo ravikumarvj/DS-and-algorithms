@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 def remove_c_and_ab(array):
     print(array)
@@ -21,4 +21,5 @@ def remove_c_and_ab(array):
 
 if __name__ == '__main__':
     array = list('aaabbcacbcbcaabb')
+    array = list('acbxaccbbacbycatcb')
     print(remove_c_and_ab(array))

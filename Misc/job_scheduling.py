@@ -1,4 +1,4 @@
-### COPIED ##
+### COPIED ##   VERIFIED
 
 def find_jobs_profit(arr):
     max_deadline = max((arr[i][1] for i in range(len(arr))))

@@ -1,4 +1,4 @@
-#### Copied ####
+#### Copied ####  VERIFIED
 def largest_sum(arr):
     sum_so_far = 0
     start_so_far = 0

@@ -1,4 +1,4 @@
-
+#### COPIED #### VERIFIED
 def pattern_match_rec(string, s_in, pattern, p_in, match):
     if p_in == len(pattern) and s_in == len(string):
         return True

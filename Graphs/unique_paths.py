@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 from queue import Queue
 from digraph import DiGraph
 from graph import NGraph

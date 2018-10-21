@@ -1,4 +1,4 @@
-#### COPIED ###
+#### COPIED ###  VERIFIED
 
 def partition_array_same_sum(array):
     total = sum(array)

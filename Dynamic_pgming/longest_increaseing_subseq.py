@@ -1,4 +1,4 @@
-### TODO: copy ##
+### COPIED #### VERIFIED
 def longest_inc_subseq(array):
     N = len(array)
     # memo = [0] * (N + 1)
@@ -42,5 +42,5 @@ def longest_inc_subseq(array):
     return
 
 if __name__ == '__main__':
-    array = [24,15,3]
+    array = [2,3,5,8,6,7,1,2,3,24,5,6,10,41,15,31]
     longest_inc_subseq(array)

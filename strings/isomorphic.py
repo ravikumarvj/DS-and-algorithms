@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 """
 Given two strings, determine if they are isomorphic.
 Two strings X and Y are called isomorphic strings if all occurrences of each character in X can be

@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 def find_max_sum_cir(arr):
     max_start, max_end, max_sum = 0, 0, 0
     sum_so_far, start = 0, 0

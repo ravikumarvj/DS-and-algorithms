@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 """
 Given a list of array, return a list of arrays, each array is a combination of one element in each given array.
 Let me give you an example to help you understand the question Suppose the input is

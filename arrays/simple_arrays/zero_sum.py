@@ -1,3 +1,5 @@
+#### COPIED ###  VERIFIED
+
 def zerosum_subarray(array):
     s = set()
 

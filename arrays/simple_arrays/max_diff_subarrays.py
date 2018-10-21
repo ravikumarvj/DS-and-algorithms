@@ -1,4 +1,4 @@
-
+#### COPIED #### VERIFIED
 # from left to right
 def kadanes_max_sum_fill_array(array, result):
     sum_so_far = 0

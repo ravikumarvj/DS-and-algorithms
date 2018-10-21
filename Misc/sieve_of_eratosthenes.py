@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 from math import sqrt
 
 def crossout(arr, prime, num):

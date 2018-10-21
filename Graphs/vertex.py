@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 class Vertex:
     def __init__(self, key):
         self.key = key

@@ -1,4 +1,4 @@
-#### COPIED #### to Misc
+#### COPIED #### VERIFIED
 """
 Suppose you are given a chess board and you have only bishops in the chess board (1000000 by 1000000)
 We know bishops move digonally ,now you have to tell how many pair of bishops are in attacking position to each other.

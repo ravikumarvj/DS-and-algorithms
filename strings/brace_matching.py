@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 # Number of reverseals needed to make braces matching
 # No need of stack. Just keep count of open braces.

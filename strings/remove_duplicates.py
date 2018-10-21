@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 def remove_duplicates(string):
     stl = list(string)
     copy = 0

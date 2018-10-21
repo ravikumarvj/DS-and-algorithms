@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###   VERIFIED
 
 
 def partition(array, start, end):

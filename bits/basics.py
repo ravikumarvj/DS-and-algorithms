@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 def get_bit(number, bit_no):  # Zero based bit numbering
     # Just doing & will clear rest of the bit.
@@ -97,7 +97,7 @@ def rightmost_set_bit3(number):
     return map[temp]
 
 
-def to_upper(c):  # TODO COPY
+def to_upper(c):
     return chr(ord(c) - ord('a') + ord('A'))
 
 def convert_bits(number1, number2):

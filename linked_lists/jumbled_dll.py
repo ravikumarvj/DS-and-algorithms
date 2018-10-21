@@ -1,4 +1,4 @@
-### COPIED  ####
+### COPIED  ####  VERIFIED
 """
 You are given a Double LinkList with one pointer of each node pointing to the next node just like in a single link list.
 The second pointer however CAN point to any node in the list and not just the previous node. Now write a program in O(n)

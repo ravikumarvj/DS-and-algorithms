@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 """
 Given an array, find its minimum and maximum value with minimum comparisons

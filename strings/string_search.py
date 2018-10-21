@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 from collections import defaultdict
 
 def find_pattern(pattern, string):  # find pattern in string  # COPIED

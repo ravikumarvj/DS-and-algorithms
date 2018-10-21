@@ -1,3 +1,5 @@
+#### COPIED #### VERIFIED
+
 from queue import Queue
 from queue import LifoQueue
 

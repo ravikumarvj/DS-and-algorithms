@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 # Given an array of integers, we have to find two elements whose XOR is maximum.
 class Node:  # Copied
     def __init__(self, digit, num = None):

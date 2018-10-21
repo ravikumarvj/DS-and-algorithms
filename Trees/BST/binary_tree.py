@@ -1,3 +1,4 @@
+#### COPIED ### VERIFIED
 from bst import BSTree, Node
 from queue import Queue
 
@@ -115,18 +116,6 @@ class BinaryTree(BSTree):
                     if node.links[i]:
                         stk.put((node.links[i], False))
 
-    '''
-    @staticmethod
-    def _is_avl(node):
-        if not node:
-            return True
-
-        if abs(BinaryTree.height(node.links[0]) - BinaryTree.height(node.links[1])) >= 2:
-            return False
-
-        return BinaryTree._is_avl(node.links[0]) and BinaryTree._is_avl(node.links[1])
-    '''
-
     @staticmethod
     def _is_avl(node):  # copied
         if not node:
@@ -226,7 +215,6 @@ class BinaryTree(BSTree):
         return True
 
     # Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
-
     @staticmethod
     def find(node, data):  # Copied
         if node is None:

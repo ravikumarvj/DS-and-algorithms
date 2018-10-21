@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###   VERIFIED
 def segegrate_p_n(array):  # unstable
     start = 0
     end = len(array) - 1

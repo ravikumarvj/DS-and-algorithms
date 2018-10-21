@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 """
 message = [ 'c', 'a', 'k', 'e', ' ',

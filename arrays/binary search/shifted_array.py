@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 '''
 1. Find a given number num in a sorted array arr:
 arr = [2, 4, 5, 9, 12, 17]

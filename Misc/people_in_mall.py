@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 """
 The mall management is trying to figure out what was the busiest moment in the mall in the last year. You are given data from the door detectors: each data entry includes a timestamp (seconds in Unix Epoch format), an amount of people and whether they entered or exited.
 

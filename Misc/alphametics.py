@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 from itertools import permutations
 import re
 

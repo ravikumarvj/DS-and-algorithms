@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 # No duplicate key allowed.
 class PriorityQueue:
     def __init__(self):

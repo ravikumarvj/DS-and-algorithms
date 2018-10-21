@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####  VERIFIED
 
 def find_num_activites(arr):
     # we use greedy approach. Sort based on finish times. And start selecting from beginning

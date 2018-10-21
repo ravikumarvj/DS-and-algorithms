@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 from queue import LifoQueue
 
 class Node:  ## COPIED

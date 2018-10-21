@@ -1,4 +1,4 @@
-#### COPIED ###
+#### COPIED ###  VERIFIED
 
 def find(array, num):  # search for num in array. Array is sorted, but rotated
     start = 0

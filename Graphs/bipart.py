@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 from graph_colouring import GraphNode, Graph
 from queue import Queue
 

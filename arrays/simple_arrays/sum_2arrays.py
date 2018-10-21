@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####   VERIFIED
 """
 Given two sorted arrays A and B of size m and n of distinct elements. Given a value x.
 The problem is to count all pairs from both arrays whose sum is equal to x.

@@ -1,3 +1,6 @@
+### COPIED #### VERIFIED
+
+
 def max_profit(arr):  # max profit from max 2 transactions
     if len(arr) < 2:
         return 0

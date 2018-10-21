@@ -1,4 +1,4 @@
-
+#### COPIED #### VERIFIED
 
 def place_node(node, i, j, N, board, column):
     # IF column j is used, or anybody already there in board[i][j], return Fals
@@ -59,4 +59,4 @@ def SolveNqueens(N):
 
 
 if __name__ == '__main__':
-    print(SolveNqueens(20))
+    print(SolveNqueens(10))

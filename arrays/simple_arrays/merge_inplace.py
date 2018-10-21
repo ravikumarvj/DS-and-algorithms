@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 
 # merge two arrays 'x' and 'y', without extra space.
 # start filling with x and then y.

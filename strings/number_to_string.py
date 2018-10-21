@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####   VERIFIED
 
 alpha = list('abcdefghijklmnopqrstuvwxyz')
 

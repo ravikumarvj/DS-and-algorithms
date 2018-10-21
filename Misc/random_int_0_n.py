@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 """
 You are given N and an int K[].
 The task at hand is to generate a equal probabilistic random number between 0 to N-1 which doesn't exist in K.

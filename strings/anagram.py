@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 """
 Problem 1: Given two strings, check if the strings are anagrams of each other
 Problem 2: Given two strings, string1 and string2, check if string1 contains an anagram of string2

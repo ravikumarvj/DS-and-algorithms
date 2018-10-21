@@ -1,4 +1,4 @@
-#### COPIED ####
+#### COPIED ####  VERIFIED
 # sort based on frequency of occurence. If frequency is same, sort based on index.
 def sort_on_freq(array):
     my_hash = dict()

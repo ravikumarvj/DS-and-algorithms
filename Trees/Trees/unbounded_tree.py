@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 import random
 from queue import Queue
 

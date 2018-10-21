@@ -1,4 +1,4 @@
-""" COPIED """
+#### COPIED #### VERIFIED
 def print_all_rec(string, index, result):
     if index == len(string):
         print(''.join(result))

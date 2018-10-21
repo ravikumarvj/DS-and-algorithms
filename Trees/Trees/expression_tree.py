@@ -1,4 +1,4 @@
-#### COPIED #####
+#### COPIED #####   VERIFIED
 class Et_node:
     # Constructor to create a node
     def __init__(self, value):

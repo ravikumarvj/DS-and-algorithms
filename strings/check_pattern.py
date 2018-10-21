@@ -1,3 +1,4 @@
+#### COPIED #### VERIFIED
 def check_pattern(string, pattern):
     my_hash = {}  # Hash for character ORDER in pattern
     count = 0

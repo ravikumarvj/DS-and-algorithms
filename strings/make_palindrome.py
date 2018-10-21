@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###   VERIFIED
 from collections import defaultdict
 
 def make_palindrome(string):

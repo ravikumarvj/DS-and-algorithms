@@ -1,7 +1,8 @@
+#### COPIED #### VERIFIED
 import ctypes
 
 class Node:
-    def __init__(self, data=None, xor_val = None):
+    def __init__(self, data=None, xor_val = 0):  # = 0. Not None
         self.data = data
         self.xor_val = xor_val
 
@@ -18,32 +19,24 @@ class Dll:
         return ret
 
     def add(self, data):
+        node = Node(data)
+
         if self.head is None:
-            self.head = Node(data)
-            self.tail = self.head
-            self.l.append(self.head)
-            return
+            self.head = node
+        else:
+            self.tail.xor_val = id(node) ^ self.tail.xor_val
+            node.xor_val = id(self.tail)
 
-        prev = 0
-        temp = self.head
-        print(data, '*')
-        # print(id(self.head), Dll._get_obj(id(self.head)))
-        while temp.xor_val and temp.xor_val != prev:
-            p_temp = temp
-            temp = Dll._get_obj(temp.xor_val^prev)
-            prev = id(p_temp)
-
-        node = Node(data, id(temp))
         self.l.append(node)  # In python, this is needed to avoid auto-garbage collection of node
-        temp.xor_val = prev ^ id(node)
+        self.tail = node
 
-    def get(self, index):
+    def get(self, index):  # index starts from 1
         if self.head is None:
             return None
 
         temp = self.head
         prev = 0
-        index -= 1
+        index -= 1  # index starts from 1
 
         while index and temp.xor_val and temp.xor_val != prev:
             index -= 1
@@ -72,5 +65,5 @@ if __name__ == '__main__':
     linked_list.add(111)
     linked_list.add(112)
     linked_list.add(113)
-    print(linked_list.get(14))
+    print(linked_list.get(1))
     # print(linked_list.start.data)

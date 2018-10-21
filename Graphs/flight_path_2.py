@@ -1,4 +1,4 @@
-### COPIED ###
+### COPIED ###  VERIFIED
 """
 You are going on a one-way indirect flight trip that includes an unknown very large number of transfers.
 

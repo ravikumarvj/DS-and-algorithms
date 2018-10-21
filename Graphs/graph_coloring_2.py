@@ -1,4 +1,4 @@
-### COPIED ####
+### COPIED ####  VERIFIED
 """
 Given an undirected graph represented as an adjacency matrix and an integer k,
 determine whether each node in the graph can be colored such that no
